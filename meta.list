@@ -39,8 +39,6 @@ DOMAIN-SUFFIX,oculuscdn.com
 
 # --- Viber ---
 DOMAIN-SUFFIX,viber.com
-DOMAIN-SUFFIX,vbrdev.com
-DOMAIN-SUFFIX,viberpay.com
 DOMAIN-SUFFIX,vb.me
 
 # --- Ключевые слова ---
@@ -78,14 +76,11 @@ IP-CIDR,179.60.192.0/22,no-resolve
 IP-CIDR,185.60.216.0/22,no-resolve
 IP-CIDR,204.15.20.0/22,no-resolve
 
-# --- Viber IPv4 ---
-IP-CIDR,5.9.164.0/24,no-resolve
-IP-CIDR,31.14.135.0/24,no-resolve
-IP-CIDR,37.120.192.0/22,no-resolve
-IP-CIDR,46.53.240.0/20,no-resolve
-IP-CIDR,79.143.184.0/22,no-resolve
-IP-CIDR,185.20.4.0/22,no-resolve
-IP-CIDR,185.99.16.0/22,no-resolve
+# Примечание: у Viber нет собственных выделенных IP-диапазонов — сервис работает
+# на общей инфраструктуре Amazon CloudFront и Akamai, которую делит с тысячами
+# других сайтов. Прописывать сюда IP-CIDR для Viber нельзя: это либо не будет
+# совпадать с реальным трафиком, либо случайно затронет чужие сервисы.
+# Матчинг Viber обеспечивают правила DOMAIN-SUFFIX и PROCESS-NAME выше.
 
 # --- IPv6 ---
 IP-CIDR6,2401:db00::/32,no-resolve
