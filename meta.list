@@ -1,0 +1,74 @@
+# NAME: Meta (Facebook / Instagram / WhatsApp / Messenger / Threads)
+# Формат совместим с ShadowRocketSimpleConfig
+# Политика (PROXY/DIRECT) задаётся один раз в baseline.conf через RULE-SET,
+# внутри .list-файла колонка политики не указывается.
+
+# --- Facebook / Messenger ---
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fb.watch
+DOMAIN-SUFFIX,fbaddins.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbworkmail.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,messenger.com
+
+# --- Instagram ---
+DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,instagram.com
+
+# --- WhatsApp ---
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,wa.me
+
+# --- Threads ---
+DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,threads.com
+
+# --- Meta общее (VR/Oculus, реклама, разработка) ---
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,metacdn.com
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,oculuscdn.com
+
+# --- Ключевые слова ---
+DOMAIN-KEYWORD,facebook
+DOMAIN-KEYWORD,instagram
+DOMAIN-KEYWORD,whatsapp
+
+# --- Процессы ---
+PROCESS-NAME,com.facebook.Facebook
+PROCESS-NAME,com.facebook.Messenger
+PROCESS-NAME,com.burbn.instagram
+PROCESS-NAME,net.whatsapp.WhatsApp
+PROCESS-NAME,com.facebook.katana
+PROCESS-NAME,com.facebook.orca
+PROCESS-NAME,com.instagram.android
+PROCESS-NAME,com.whatsapp
+
+# --- IPv4 ---
+IP-CIDR,31.13.24.0/21,no-resolve
+IP-CIDR,31.13.64.0/18,no-resolve
+IP-CIDR,45.64.40.0/22,no-resolve
+IP-CIDR,66.220.144.0/20,no-resolve
+IP-CIDR,69.63.176.0/20,no-resolve
+IP-CIDR,69.171.224.0/19,no-resolve
+IP-CIDR,102.132.96.0/20,no-resolve
+IP-CIDR,103.4.96.0/22,no-resolve
+IP-CIDR,129.134.0.0/16,no-resolve
+IP-CIDR,157.240.0.0/16,no-resolve
+IP-CIDR,163.70.128.0/17,no-resolve
+IP-CIDR,173.252.64.0/18,no-resolve
+IP-CIDR,179.60.192.0/22,no-resolve
+IP-CIDR,185.60.216.0/22,no-resolve
+IP-CIDR,204.15.20.0/22,no-resolve
+
+# --- IPv6 ---
+IP-CIDR6,2401:db00::/32,no-resolve
+IP-CIDR6,2620:0:1c00::/40,no-resolve
+IP-CIDR6,2a03:2880::/32,no-resolve
