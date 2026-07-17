@@ -5,6 +5,15 @@
 # Источник: подтверждённые основные домены (netify.ai/resources/applications/viber)
 # Примечание: Viber принадлежит компании Rakuten, а не Meta/Google и т.д.
 
+# --- Процессы (ставим ПЕРВЫМИ — ловят весь трафик приложения, включая
+# недокументированные backend-домены на AWS, которые не попадают под
+# DOMAIN-SUFFIX ниже. Именно это чаще всего чинит проблему с отправкой
+# сообщений, когда домены вроде бы прописаны, а сообщения не уходят) ---
+PROCESS-NAME,com.viber.voip
+PROCESS-NAME,Viber.exe
+PROCESS-NAME,Viber
+
+
 # --- Домены (официальные, подтверждённые) ---
 DOMAIN-SUFFIX,viber.com
 DOMAIN-SUFFIX,vb.me
