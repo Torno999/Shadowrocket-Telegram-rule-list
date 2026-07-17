@@ -6,9 +6,12 @@
 # Примечание: Viber принадлежит компании Rakuten, а не Meta/Google и т.д.
 
 # --- Домены (официальные, подтверждённые) ---
+
+DOMAIN-KEYWORD,viber
 DOMAIN-SUFFIX,viber.com
-DOMAIN-SUFFIX,vb.me
-DOMAIN-SUFFIX,viberdns.com
+DOMAIN-SUFFIX,viber.me
+DOMAIN-SUFFIX,vbr.im
+DOMAIN-SUFFIX,rakuten.com
 
 # --- Ключевые слова ---
 DOMAIN-KEYWORD,viber
@@ -17,6 +20,8 @@ IP-CIDR,52.2.0.0/16
 IP-CIDR,54.160.0.0/12
 IP-CIDR,18.192.0.0/12
 IP-CIDR,3.120.0.0/14
+IP-CIDR,194.44.13.0/24
+IP-CIDR,185.195.120.0/22
 
 
 # --- ВАЖНО про IP-диапазоны ---
